@@ -1,0 +1,45 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Showcase from "../components/Showcase.astro";
+import Features from "../components/Features.astro";
+import Tabs from "../components/Tabs.astro";
+
+const name = "Astro";
+const style = "purple";
+const response = await fetch(
+  "https://jsonplaceholder.typicode.com/users?_limit=10"
+);
+const users = await response.json();
+const visible = false;
+---
+
+<Layout>
+  <Showcase showExtra={true} />
+  <Features />
+  <section class='page-content'>
+    <div class='container'>
+      <h2>Get Started With Astro</h2>
+      <p>
+        Get a new Astro project up and running locally with our helpful
+        create-astro CLI wizard!
+      </p>
+      <Tabs
+        headings={["NPM", "PNPM", "YARN"]}
+        contents={[
+          "$ npm create astro@latest",
+          "$ pnpm create astro@latest",
+          "$ yarn create astro",
+        ]}
+      />
+      <h3>Start Building</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+        voluptatum dolorum magnam ea deleniti tenetur cumque commodi quas
+        adipisci tempora necessitatibus, obcaecati modi perspiciatis porro ut,
+        itaque dolores, hic fuga! Sint itaque eaque atque officiis voluptatum
+        facilis recusandae quidem nobis aperiam autem voluptas iure quis
+        molestias hic debitis, magnam laudantium!
+      </p>
+    </div>
+  </section>
+</Layout>

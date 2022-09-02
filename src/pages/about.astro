@@ -1,0 +1,60 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import logos from "../images/deploy-logos.png";
+import logosSmall from "../images/deploy-logos-small.png";
+---
+
+<Layout title='About Astro'>
+  <section class='page-content'>
+    <div class='container'>
+      <h2>About Astro</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis
+        nobis, saepe vero dolore libero minima dignissimos facilis officiis
+        maiores quis nihil pariatur omnis mollitia ab vel recusandae in deserunt
+        ea distinctio, assumenda, est rerum esse repellendus nulla! Rem, unde
+        quia. Veritatis sapiente architecto recusandae vitae natus maxime totam
+        dicta iste?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
+        enim dolorum culpa tempora ullam repellendus! Nesciunt corrupti
+        asperiores ea eaque, ut eveniet repellendus a fugit doloremque unde
+        itaque ratione repudiandae?
+      </p>
+      <Card>
+        <h3>Use the tools you already love</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          laboriosam tempore dignissimos officia ad facilis quis iusto id quod
+          doloremque. Asperiores voluptatibus quo, velit tempore ut perferendis
+          excepturi animi delectus deleniti consequatur quam porro alias
+          laboriosam libero autem, sint amet quas saepe atque eaque recusandae
+          voluptate! Aut sed excepturi iusto?
+        </p>
+      </Card>
+      <h3>Deploy to anywhere, even the edge</h3>
+      <img class='logos' src={logos} alt='framework logos' />
+      <img class='logos-small' src={logosSmall} alt='framework logos' />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolorem
+        saepe illo earum culpa sunt tempore, vel distinctio deserunt, velit
+        magni in corporis voluptatem atque assumenda, sed error adipisci
+        molestias!
+      </p>
+      <h3>Join Our Community</h3>
+      <p>
+        Join us in the Astro Discord to share with and get help from an active,
+        friendly community!
+      </p>
+      <ul>
+        <li>🗨 Say hi in our #introduce-yourself channel!</li>
+        <li>
+          🗨 Ask out Support Squad a question in our #support-threads channel!
+        </li>
+        <li>🗨 Share what you've been working on in our #showcase channel!</li>
+      </ul>
+    </div>
+  </section>
+</Layout>
